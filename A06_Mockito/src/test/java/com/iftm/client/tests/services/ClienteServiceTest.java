@@ -115,7 +115,7 @@ public class ClienteServiceTest {
     public void testUpdateRetornaClientDtoQuandoExistirId() {
         Long id = 1l;
         Optional<Client> client = Optional.of(new Client());
-        Client clientTest = new Client(9L, "Joao Aparecido", "444489887954", 1200.0, Instant.parse("1998-05-10T08:00:00Z"),4);c
+        Client clientTest = new Client(9L, "Joao Aparecido", "444489887954", 1200.0, Instant.parse("1998-05-10T08:00:00Z"),4);
         Mockito.when(rep.getOne(id)).thenReturn(clientTest);
 
         Client clientTest2 = new Client(9L, "Juarez Alves", "444489887954", 1200.0, Instant.parse("1998-05-10T08:00:00Z"),4);
